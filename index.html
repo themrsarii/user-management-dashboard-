@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>CRUD APP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>CRUD APP</h1>
+        <ul class="nav-links">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>SERVICES</li>
+            <button id="addUserBtn" class="bt2">ADD NEW USER</button>
+
+        </ul>
+        <div class="btns">
+            <button id="navaddUserBtn">ADD NEW USER</button>
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+    <hr>
+    <h1 style="text-align: center;">All Available users</h1>
+
+    <main>
+        <div class="user-container">
+            <!-- <div class="single-user">
+                <div class="user-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKz0bwzLh7BASxSLZbTFRd4Uhi01BaPcEyiQzJJeMQ7timjy4775qBrDs&s=10"
+                        alt="">
+                    <hr style="margin-top: 10px;  ">
+                </div>
+                <h3>Username</h3>
+                <p>yourmail@mail.com</p>
+                <div class="action-btns">
+                    <div id="d-btn">
+                        <button>DELETE</button>
+                    </div>
+                    <div id="u-btn">
+                        <button>UPDATE</button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </main>
+
+    <div class="vis" id="underlay">
+        <i class="cross-icon ri-close-circle-fill"></i>
+        <form>
+            <h2>ADD USER DETAILS</h2>
+            <div>
+                <label for="name">Name:</label> <br>
+                <input  type="text" placeholder="Enter your name" id="name">
+            </div>
+            <div>
+                <label for="email">Email:</label> <br>
+                <input type="email" placeholder="Enter your email" id="name">
+            </div>
+            <div>
+                <label for="url">Url:</label> <br>
+                <input type="url" placeholder="Enter your url" id="name">
+            </div>
+            <button>ADD TO RECORDS</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
